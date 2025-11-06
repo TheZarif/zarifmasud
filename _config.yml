@@ -20,11 +20,11 @@ paginate: 5
 markdown: kramdown
 plugins:
   - jekyll-remote-theme
+  - jekyll-include-cache
   - jekyll-scholar
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-include-cache
 
 scholar:
   style: apa
