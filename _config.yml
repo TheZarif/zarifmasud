@@ -13,13 +13,12 @@ twitter_username: ""                     # optional
 logo: "/images/profile.jpg"              # add a headshot to /images later
 
 # theme: "minimal-mistakes-jekyll"
-remote_theme: "mmistakes/minimal-mistakes"
+theme: "minimal-mistakes-jekyll"
 minimal_mistakes_skin: "default"
 paginate: 5
 
 markdown: kramdown
 plugins:
-  - jekyll-remote-theme
   - jekyll-include-cache
   - jekyll-scholar
   - jekyll-paginate

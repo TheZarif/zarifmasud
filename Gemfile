@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3"
-gem "jekyll-remote-theme", "~> 0.5.1"   # ← upgrade from 0.4.x
+gem "minimal-mistakes-jekyll", "~> 4.26"   # theme as a gem (stable)
 gem "jekyll-scholar"
 gem "jekyll-paginate"
 gem "jekyll-sitemap"
