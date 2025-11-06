@@ -17,4 +17,3 @@ Hi! I'm **Zarif Masud**, a PhD candidate at **Toronto Metropolitan University (T
 [Learn more about my work →](/about/){: .btn .btn--primary}
 [View publications →](/publications/){: .btn .btn--info}
 [Download CV →](/files/CV.pdf){: .btn .btn--success}
-
