@@ -5,3 +5,7 @@ node_modules/
 *.zip
 *.tar
 *.tar.gz
+vendor/
+_site/
+.DS_Store
+node_modules/
