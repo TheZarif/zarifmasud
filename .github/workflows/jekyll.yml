@@ -1,4 +1,4 @@
-name: Build and Deploy Jekyll
+name: Build and Deploy Jekyll to GitHub Pages
 
 on:
   push:
@@ -18,21 +18,29 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: ruby/setup-ruby@v1
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
           bundler-cache: true
 
-      # Install dependencies from Gemfile
-      - run: bundle install --jobs 4
+      - name: Install dependencies
+        run: bundle install --jobs 4
 
-      # Build the site
-      - run: bundle exec jekyll build --trace
+      - name: Build site
+        run: bundle exec jekyll build --trace
+        env:
+          JEKYLL_ENV: production
 
-      # Upload the built _site/ as the Pages artifact
-      - uses: actions/upload-pages-artifact@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
@@ -43,5 +51,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - id: deployment
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
