@@ -1,0 +1,40 @@
+title: "Zarif Masud"
+tagline: "PhD Candidate · Responsible AI · Information Retrieval · Migration Studies"
+email: "zarif.masud@torontomu.ca"
+description: "PhD researcher at TMU (co-supervised by Ebrahim Bagheri & Ishtiaque Ahmed). I study IR bias, framing, and AI in immigration; auditing large datasets (MS MARCO, Reddit, Hansard) and advocating for transparency and accountability."
+
+url: "https://zarifmasud.github.io"   # replace with your GitHub username
+baseurl: ""                              # keep empty for user.github.io root sites
+
+github_username: thezarif            # replace
+google_scholar_id: "AjSsN60AAAAJ"                    # add if you have it
+orcid_id: ""                             # e.g., 0000-0000-0000-0000
+twitter_username: ""                     # optional
+logo: "/images/profile.jpg"              # add a headshot to /images later
+
+theme: "minimal-mistakes-jekyll"
+minimal_mistakes_skin: "default"
+paginate: 5
+
+markdown: kramdown
+plugins:
+  - jekyll-scholar
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
+scholar:
+  style: apa
+  bibliography: _bibliography/papers.bib
+
+collections:
+  posts:
+    output: true
+  teaching:
+    output: true
+  projects:
+    output: true
+  publications:
+    output: true
+  talks:
+    output: true
