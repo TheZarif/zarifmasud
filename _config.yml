@@ -3,7 +3,7 @@ tagline: "PhD Candidate · Responsible AI · Information Retrieval · Migration 
 email: "zarif.masud@torontomu.ca"
 description: "PhD researcher at TMU (co-supervised by Ebrahim Bagheri & Ishtiaque Ahmed). I study IR bias, framing, and AI in immigration; auditing large datasets (MS MARCO, Reddit, Hansard) and advocating for transparency and accountability."
 
-url: "https://zarif.masud.github.io"   # replace with your GitHub username
+url: "https://thezarif.github.io"   # replace with your GitHub username
 baseurl: ""                              # keep empty for user.github.io root sites
 
 github_username: thezarif            # replace
